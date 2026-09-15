@@ -1,0 +1,46 @@
+## Core .NET Build Artifacts
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Xx]64/
+[Xx]86/
+[Bb]in/
+[Oo]bj/
+
+## Visual Studio Cache and Settings
+.vs/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+## Visual Studio 2026 / Roslyn / Code Analysis
+.cr/
+.tlog/
+*.log
+.ast/
+.ruleset
+
+## .NET Core / .NET 10 User Secrets & Configurations
+appsettings.Development.json
+# Note: Keep appsettings.json in git, but ignore local secrets if you use a custom secrets file
+# secret.json
+
+## Rider / JetBrains IDEs
+.idea/
+*.sln.imbraked
+
+## VS Code Settings
+.vscode/
+!.vscode/extensions.json
+*.code-workspace
+
+## Node.js / Frontend dependencies (if doing a blended API/SPA project)
+node_modules/
+/jspm_packages/
+/bower_components/
+
+## Operating System Files
+Thumbs.db
+ehthumbs.db
+.DS_Store
