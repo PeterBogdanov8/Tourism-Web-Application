@@ -21,7 +21,15 @@ namespace backend.Controllers
         {
             var tours = await _context.Tours.ToListAsync();
             return tours;
-        }   
+        }
+
+        [HttpPost("add-tour")]
+        public async Task<int> AddTour([FromBody] Tour tour)
+        {
+            _context.Tours.Add(tour);
+            await _context.SaveChangesAsync();
+            return tour.Id;
+        }
 
     }
 }
