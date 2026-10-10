@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Tour } from "../shared/models/tour";
 import { getTours } from "../services/api";
-import { Card, CardHeader, CardContent, Typography, Grid } from "@mui/material";
+import { Card, CardHeader, CardContent, Typography, Grid, IconButton } from "@mui/material";
+import { Add } from '@mui/icons-material';
 
 function ToursPage() {
     const [tours, setTours] = useState<Array<Tour>>([]);
@@ -12,6 +13,9 @@ function ToursPage() {
     return (
         <>
             <h1>Tours Page</h1>
+            <IconButton>
+                <Add aria-label="add" color="primary"></Add>
+            </IconButton>
             <Grid container spacing={3} sx={{ p: 3 }}>
                 {
                     tours.map(tour => (
