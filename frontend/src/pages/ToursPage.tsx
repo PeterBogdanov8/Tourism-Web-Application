@@ -19,7 +19,7 @@ function ToursPage() {
 
     getTours().subscribe((tours) => {
         setTours(tours)
-    })
+    });
     return (
         <>
             <h1>Tours Page</h1>
